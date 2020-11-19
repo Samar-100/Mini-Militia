@@ -4,12 +4,14 @@ class Form {
     this.button = createButton("Start");
     this.greeting = createElement("h2");
     this.title = createElement("h2");
+    this.heading = createElement("h1");
     this.number = createElement("h1");
     this.resetButton = createButton("Reset");
   }
 
   hide() {
     this.title.hide();
+    this.heading.hide();
     this.number.hide();
     this.greeting.hide();
     this.input.hide();
@@ -19,6 +21,9 @@ class Form {
   display() {
     this.title.html("Enter your name below");
     this.title.position(displayWidth / 2 - 120, displayHeight / 6);
+
+    this.heading.html("Shoot-Out");
+    this.heading.position(displayWidth / 2 - 80, displayHeight / 6 - 100);
 
     this.input.position(displayWidth / 2 - 85, displayHeight / 4);
     this.button.position(displayWidth - 180, displayHeight - 218);
