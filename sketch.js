@@ -64,7 +64,7 @@ function setup() {
 
 function draw() {
   background(backgroundImage);
-  drawSprites();
+  // drawSprites();
   if (playerCount === 6) {
     game.update(1);
   }
